@@ -4,7 +4,186 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hollie Beaumont</title>
-    <link rel="stylesheet" href="style.css" />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 40px 60px;
+}
+.heading {
+  display: flex;
+  justify-content: space-between;
+}
+.heading-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.heading-info-header {
+  margin-right: 44px;
+}
+.heading-info-header-h1 {
+  font-weight: 100;
+}
+.heading-info-header-h1:hover {
+  cursor: pointer;
+}
+.heading-info-tag {
+  display: flex;
+  position: relative;
+  padding: 15px 23px 0 0;
+}
+.heading-info-tag-each {
+  font-size: 18px;
+}
+.heading-info-tag-each:hover {
+  cursor: pointer;
+}
+.heading-info-tag--active {
+  width: 5px;
+  color: black;
+}
+.heading-icon {
+  margin-top: 30px;
+}
+.heading-icon--each {
+  padding-right: 15px;
+  font-size: 24px;
+  text-decoration: none;
+  color: black;
+}
+.container {
+  margin-top: 100px;
+}
+.container-content {
+  display: flex;
+  justify-content: space-between;
+}
+.container-content--img-i {
+  width: 655px;
+  height: 480px;
+}
+.container-content--img-i:hover {
+  cursor: pointer;
+}
+.container-content-name {
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+.container-content-name--link {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: 300;
+}
+.container-content-name--link:hover {
+  text-decoration: underline;
+}
+.introduction-int {
+  width: 650px;
+  height: 165px;
+}
+.introduction-int--text {
+  font-weight: 300;
+}
+.introduction-slogan {
+  margin-top: 50px;
+  width: 280px;
+  border-bottom: 1px solid black;
+}
+.introduction-slogan--text {
+  color: black;
+  font-size: 34px;
+  font-weight: 300;
+  text-decoration: none;
+}
+.footer {
+  margin-top: 220px;
+}
+.footer-info {
+  margin-bottom: 33px;
+}
+.footer-info--text {
+  font-size: 18px;
+}
+.footer-made--text {
+  font-size: 18px;
+}
+.footer-made--link {
+  color: black;
+}
+@media (max-width: 1024px) {
+        body {
+          margin: 30px; /* Adjust margin for tablets */
+        }
+
+        .heading {
+          flex-direction: column; /* Stack heading elements vertically */
+          align-items: flex-start; /* Align items to start */
+        }
+
+        .container-content {
+          flex-direction: column; /* Stack content vertically */
+          align-items: center; /* Center content */
+        }
+
+        .container-content--img-i {
+          width: 90%; /* Adjust image width for tablets */
+          height: auto; /* Maintain aspect ratio */
+        }
+
+        .container-content-name {
+          margin-bottom: 30px; /* Reduced spacing on smaller screens */
+        }
+      }
+
+      @media (max-width: 768px) {
+        body {
+          margin: 20px; /* Reduced margin for tablets */
+        }
+
+        .heading {
+          flex-direction: column; /* Stack heading vertically */
+          align-items: flex-start; /* Align items to start */
+        }
+
+        .container-content {
+          flex-direction: column; /* Stack content vertically */
+          align-items: center; /* Center content */
+        }
+
+        .container-content--img-i {
+          width: 100%; /* Full width on smaller screens */
+          height: auto; /* Maintain aspect ratio */
+        }
+
+        .container-content-name {
+          margin-bottom: 40px; /* Reduced spacing on smaller screens */
+        }
+      }
+
+      @media ( max-width: 480px) {
+        body {
+          margin: 10px; /* Further reduced margin for mobile */
+        }
+
+        .heading {
+          flex-direction: column; /* Stack heading vertically */
+          align-items: flex-start; /* Align items to start */
+        }
+
+        .introduction-slogan {
+          margin-top: 20px; /* Reduced margin */
+        }
+
+        .footer {
+          margin-top: 100px; /* Adjust footer margin for mobile */
+        }
+      }
+
+    </style>
     <link rel="stylesheet" href="fontawesome-free-6.5.1-web/css/all.css" />
   </head>
   <body>
@@ -43,11 +222,7 @@
             />
           </div>
           <div class="container-content-name">
-            <a
-              href="https://beaumont-fluid-demo.squarespace.com/work/clay-ceramics"
-              class="container-content-name--link"
-              >Clay Ceramics</a
-            >
+            <a href="./clayceramics.html" class="container-content-name--link">Clay Ceramics</a>
           </div>
         </div>
         <div class="container-part">
@@ -154,16 +329,11 @@
     </div>
     <div class="footer">
       <div class="footer-info">
-        <div class="footer-info--text">email@example.com</div>
-        <div class="footer-info--text">(555) 555-5555</div>
+        <div class="footer-info--text">hongan101003@gmail.com</div>
+        <div class="footer-info--text">
+          +384 555-5555</div>
       </div>
-      <div class="footer-made">
-        <div class="footer-made--text">
-          Made with
-          <a class="footer-made--link" href="https://www.squarespace.com/"
-            >Squarespace</a
-          >
-        </div>
+      
       </div>
     </div>
   </body>

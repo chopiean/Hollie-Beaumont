@@ -68,6 +68,9 @@ body {
   color: black;
   font-weight: 300;
 }
+.container-content-name--link:hover {
+  text-decoration: underline;
+}
 .introduction-int {
   width: 650px;
   height: 165px;
@@ -94,10 +97,4 @@ body {
 }
 .footer-info--text {
   font-size: 18px;
-}
-.footer-made--text {
-  font-size: 18px;
-}
-.footer-made--link {
-  color: black;
 }
